@@ -327,8 +327,7 @@ img {
           .header-nav li:nth-child(4) {
             border-right: none; }
         .header-nav a {
-          padding: 14px 56px;
-          background: orangered; }
+          padding: 14px 56px; }
           .header-nav a:hover {
             -webkit-box-shadow: 0 -9px 0 0 #62c017;
                     box-shadow: 0 -9px 0 0 #62c017; } }
@@ -351,23 +350,25 @@ img {
 
 .hero {
   position: relative;
-  height: 450px;
+  height: 500px;
   margin: 0;
   background-color: #62c017;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(../img/chips-computer_mobile.jpg);
-  background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(../img/chips-computer_mobile.jpg);
+  display: grid;
+  place-items: center;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(/img/chips-computer_mobile.jpg);
+  background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(/img/chips-computer_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center; }
   @media screen and (min-width: 768px) {
     .hero {
       height: 600px;
-      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(../img/chips-computer_tablet.jpg);
-      background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(../img/chips-computer_tablet.jpg); } }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(/img/chips-computer_tablet.jpg);
+      background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(/img/chips-computer_tablet.jpg); } }
   @media screen and (min-width: 1200px) {
     .hero {
       height: 100vh;
-      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(../img/chips-computer_desktop.jpg);
-      background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(../img/chips-computer_desktop.jpg); } }
+      background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(/img/chips-computer_desktop.jpg);
+      background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(/img/chips-computer_desktop.jpg); } }
   .hero::before {
     content: "";
     position: absolute;
@@ -381,26 +382,27 @@ img {
       height: 100vh;
       background-size: cover;
       min-height: 504px; } }
-  .hero .wrapper {
-    z-index: 2;
-    height: 100%; }
-  .hero-cont {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-    .hero-cont h1 {
-      color: #2d2d2d; }
-      .hero-cont h1:first-line {
-        color: #FFFFFF; }
+  .hero-cont h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .hero-cont h1 span {
+      color: white; }
+    .hero-cont h1 .wrapper {
+      z-index: 2;
+      height: 100%; }
     @media screen and (min-width: 768px) {
-      .hero-cont {
+      .hero-cont h1 {
         top: 40%;
         left: 50%;
         -webkit-transform: translate(-50%);
                 transform: translate(-50%); } }
     @media screen and (min-width: 1200px) {
-      .hero-cont {
+      .hero-cont h1 {
         top: 50%;
         left: 45%; } }
 

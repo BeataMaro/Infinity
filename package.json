@@ -21,6 +21,8 @@
     "gulp-wait": "0.0.2"
   },
   "dependencies": {
-    "gulp-open": "^3.0.1"
+    "gulp-open": "^3.0.1",
+    "lodash": "^4.17.15",
+    "lodash.template": "^4.5.0"
   }
 }
