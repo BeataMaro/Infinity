@@ -19,7 +19,7 @@
                 rgba(16, 24, 30, 0.9) 0%,
                 rgba(52, 162, 21, 0.9) 50%,
                 rgba(215, 174, 19, 0.9) 100%),
-            url(img/chips-computer_tablet.jpg);
+            url(/img/chips-computer_tablet.jpg);
     }
 
     @include desktop {
@@ -28,7 +28,7 @@
                 rgba(16, 24, 30, 0.9) 0%,
                 rgba(52, 162, 21, 0.9) 50%,
                 rgba(215, 174, 19, 0.9) 100%),
-            url(img/chips-computer_desktop.jpg);
+            url(/img/chips-computer_desktop.jpg);
     }
 
     &::before {
