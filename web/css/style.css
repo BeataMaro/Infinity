@@ -355,8 +355,8 @@ img {
   background-color: #62c017;
   display: grid;
   place-items: center;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(..img/chips-computer_mobile.jpg);
-  background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(..img/chips-computer_mobile.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(16, 24, 30, 0.9)), color-stop(50%, rgba(52, 162, 21, 0.9)), to(rgba(215, 174, 19, 0.9))), url(../img/chips-computer_mobile.jpg);
+  background-image: linear-gradient(to bottom right, rgba(16, 24, 30, 0.9) 0%, rgba(52, 162, 21, 0.9) 50%, rgba(215, 174, 19, 0.9) 100%), url(../img/chips-computer_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center; }
   @media screen and (min-width: 768px) {
@@ -506,176 +506,6 @@ img {
             top: -28px;
             left: -56px; } }
 
-#clients {
-  position: relative;
-  width: 100%;
-  height: 300px; }
-  @media screen and (min-width: 768px) {
-    #clients {
-      height: 600px; } }
-  @media screen and (min-width: 1200px) {
-    #clients {
-      height: 851px; } }
-  #clients .pages {
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-    z-index: 100; }
-  #clients input {
-    display: none; }
-  #clients .slide_img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-family: "Mada", sans-serif; }
-    #clients .slide_img .phone {
-      display: none; }
-      @media screen and (min-width: 1200px) {
-        #clients .slide_img .phone {
-          display: block;
-          position: absolute;
-          top: 20%;
-          left: 15%;
-          width: 271px;
-          height: 311px; } }
-    #clients .slide_img h2 {
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      color: #FFFFFF;
-      top: 28px; }
-      @media screen and (min-width: 768px) {
-        #clients .slide_img h2 {
-          top: 10%;
-          left: 10%; } }
-      @media screen and (min-width: 1200px) {
-        #clients .slide_img h2 {
-          top: 20%;
-          left: 42%; } }
-    #clients .slide_img p {
-      display: none; }
-      @media screen and (min-width: 768px) {
-        #clients .slide_img p {
-          display: inherit;
-          top: 20%;
-          left: 10%;
-          position: absolute;
-          color: #3C3C3C;
-          font-size: 2.14rem;
-          font-weight: 300;
-          letter-spacing: -1px;
-          line-height: 42px; } }
-      @media screen and (min-width: 1200px) {
-        #clients .slide_img p {
-          top: 30%;
-          left: 42%;
-          width: 49%; } }
-      #clients .slide_img p::before {
-        position: absolute;
-        top: -20px;
-        left: -50px;
-        content: ",,";
-        font-family: "Mada", sans-serif;
-        font-size: 61.04px;
-        font-weight: 900;
-        letter-spacing: -2px;
-        color: #2d2d2d;
-        text-align: center;
-        line-height: 8px; }
-    #clients .slide_img span {
-      position: absolute;
-      font-weight: 300;
-      color: #222222;
-      letter-spacing: -1px;
-      line-height: 27px;
-      font-size: 0.86rem;
-      top: 50%;
-      left: 10%; }
-      @media screen and (min-width: 768px) {
-        #clients .slide_img span {
-          font-size: 1.57rem;
-          top: 50%;
-          left: 10%; } }
-      @media screen and (min-width: 1200px) {
-        #clients .slide_img span {
-          top: 48%;
-          left: 42%; } }
-    #clients .slide_img a {
-      color: #FFFFFF;
-      text-decoration: underline; }
-    #clients .slide_img .buttons {
-      position: absolute;
-      top: 60%;
-      left: 10%;
-      display: inline-block; }
-      @media screen and (min-width: 768px) {
-        #clients .slide_img .buttons {
-          top: 60%;
-          left: 10%; } }
-      @media screen and (min-width: 1200px) {
-        #clients .slide_img .buttons {
-          top: 55%;
-          left: 42%; } }
-      #clients .slide_img .buttons button {
-        background-color: transparent;
-        color: #FFFFFF;
-        border: thin solid white;
-        margin-right: 3.5px;
-        font-weight: 300; }
-  #clients .nav-slide {
-    position: absolute;
-    text-align: center;
-    z-index: 99;
-    top: 40%;
-    left: 30%; }
-    #clients .nav-slide .dots {
-      margin: 5px;
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border-radius: 100%;
-      background-color: rgba(255, 255, 255, 0.5);
-      -webkit-transition: 0.6s;
-      transition: 0.6s;
-      cursor: pointer; }
-      @media screen and (min-width: 1200px) {
-        #clients .nav-slide .dots {
-          width: 15px;
-          height: 15px; } }
-      #clients .nav-slide .dots:hover {
-        background-color: #3C3C3C; }
-    @media screen and (min-width: 768px) {
-      #clients .nav-slide {
-        top: 60%;
-        left: 60%; } }
-    @media screen and (min-width: 1200px) {
-      #clients .nav-slide {
-        top: 560px;
-        left: 532px; } }
-  #clients #i1:checked ~ #one,
-  #clients #i2:checked ~ #two,
-  #clients #i3:checked ~ #three {
-    z-index: 9;
-    -webkit-animation: scroll 0.5s ease-in-out;
-            animation: scroll 0.5s ease-in-out; }
-  #clients #i1:checked ~ #nav_slide #dot1 {
-    background: white; }
-  #clients #i2:checked ~ #nav_slide #dot2 {
-    background: white; }
-  #clients #i3:checked ~ #nav_slide #dot3 {
-    background: white; }
-
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 0.4; }
-  100% {
-    opacity: 1; } }
-
-@keyframes scroll {
-  0% {
-    opacity: 0.4; }
-  100% {
-    opacity: 1; } }
-
 #products {
   position: relative; }
   #products .products {
@@ -689,15 +519,15 @@ img {
       #products .products {
         height: 928px; } }
     #products .products .h2 {
-      margin: 40px auto 20px;
+      margin: 40px auto 56px;
       text-align: center; }
     #products .products .h3 {
       font-weight: 300;
-      margin: 14px auto;
+      margin: 28px auto;
       text-align: center; }
     #products .products__container {
-      width: 80%;
       margin: auto;
+      width: 80%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -707,61 +537,68 @@ img {
         #products .products__container {
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
-                  justify-content: space-between;
-          width: 80%; } }
-      #products .products__container .mobile {
+                  justify-content: space-between; } }
+    #products .products .product {
+      cursor: pointer;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      width: 100%;
+      height: 390px;
+      padding: 28px;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      margin-bottom: -112px; }
+      @media screen and (min-width: 768px) {
+        #products .products .product {
+          -ms-flex-preferred-size: 33.3%;
+              flex-basis: 33.3%; } }
+      @media screen and (min-width: 1200px) {
+        #products .products .product {
+          margin-bottom: -140px;
+          -ms-flex-preferred-size: 25%;
+              flex-basis: 25%; } }
+      #products .products .product.mobile {
         display: none; }
         @media screen and (min-width: 1200px) {
-          #products .products__container .mobile {
+          #products .products .product.mobile {
             display: initial; } }
-      #products .products__container .tablet {
+      #products .products .product.tablet {
         display: none; }
         @media screen and (min-width: 768px) {
-          #products .products__container .tablet {
+          #products .products .product.tablet {
             display: initial; } }
-      #products .products__container .product {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        cursor: pointer;
-        position: relative;
-        width: 196px;
-        height: 390px;
-        -webkit-transition: 0.1s;
-        transition: 0.1s;
-        margin-bottom: -196px; }
-        @media screen and (min-width: 1200px) {
-          #products .products__container .product {
-            margin-bottom: -140px; } }
-        #products .products__container .product-info {
-          visibility: hidden; }
-        #products .products__container .product-icon {
-          position: absolute;
-          top: 52px;
-          right: 28.5px;
-          height: 139px;
-          width: 139px; }
-        #products .products__container .product:hover {
+      #products .products .product-info {
+        visibility: hidden; }
+      #products .products .product-icon {
+        height: 150px;
+        width: 150px; }
+      #products .products .product:hover {
+        color: #FFFFFF;
+        background-color: #62c017;
+        z-index: 200; }
+        #products .products .product:hover .product-icon {
+          -webkit-filter: invert(100%);
+                  filter: invert(100%); }
+        #products .products .product:hover .product-info {
+          visibility: visible;
+          width: 159px;
           color: #FFFFFF;
-          background-color: #62c017;
-          z-index: 200; }
-          #products .products__container .product:hover .product-icon {
-            -webkit-filter: invert(100%);
-                    filter: invert(100%); }
-          #products .products__container .product:hover .product-info {
-            visibility: visible;
-            width: 159px;
-            color: #FFFFFF;
-            font-family: "Mada", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 18px;
-            margin-left: 18px;
-            margin-top: 110%; }
+          font-family: "Mada", sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.4;
+          margin-top: auto; }
 
 #contact {
   width: 100%;
