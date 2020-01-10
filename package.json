@@ -1,12 +1,12 @@
 {
   "name": "fed_html",
   "version": "1.0.0",
-  "description": "",
+  "description": "Infinity-Group landing-page",
   "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Beata Maro",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -23,6 +23,7 @@
   "dependencies": {
     "gulp-open": "^3.0.1",
     "lodash": "^4.17.15",
-    "lodash.template": "^4.5.0"
+    "lodash.template": "^4.5.0",
+    "set-value": "^3.0.1"
   }
 }
