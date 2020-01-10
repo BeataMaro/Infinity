@@ -1,0 +1,29 @@
+@mixin desktop {
+  @media screen and (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $bp-tablet) {
+    @content;
+  }
+}
+
+@mixin max-media($breakpoint) {
+  @media (max-width: $breakpoint - 1) {
+    @content;
+  }
+}
+
+@mixin quote {
+
+  content: ",,";
+  font-family: $font-1;
+  font-size: 4.36 * $base-unit;
+  font-weight: $font-bold;
+  letter-spacing: -2px;
+  color: $grey;
+  text-align: center;
+  line-height: 8px;
+}

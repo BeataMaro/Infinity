@@ -1,0 +1,69 @@
+#mission {
+
+    position: relative;
+
+
+    .pages {
+
+        top: 4*$space;
+    }
+
+    .mission {
+        height: 800px;
+        background-color: white;
+        margin: 0;
+        height: 800px;
+
+
+        @include tablet {
+            height: 600px;
+        }
+
+        @include desktop {
+            height: 600px;
+        }
+
+
+        .h2 {
+
+            margin: 3*$space;
+            text-align: center;
+        }
+
+        p {
+
+            position: relative;
+            color: $slidergrey;
+            font-weight: $font-light;
+            font-family: $font-1;
+            font-size: $font-form;
+            line-height: 35px;
+            letter-spacing: -1px;
+
+            @include desktop {
+                width: 80%;
+                height: 80%;
+                margin: 40px auto;
+                line-height: 40px;
+                letter-spacing: -1px;
+            }
+
+            &::before {
+
+                position: absolute;
+                top: -2*$space;
+                left: -$space;
+
+                @include desktop {
+                    top: -$space;
+                    left: -2*$space;
+                }
+
+
+
+                @include quote
+            }
+
+        }
+    }
+}

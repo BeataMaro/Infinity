@@ -1,0 +1,170 @@
+#form {
+  position: relative;
+  width: 100%;
+  background-color: $verylightgrey;
+
+  .formHeader {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 2*$space;
+
+      @include desktop {
+        text-align: left;
+        order: 1;
+        margin-top: $space;
+        margin-bottom: $space;
+      }
+    }
+
+    button {
+      width: 263px;
+      height: 42px;
+      margin: $space auto;
+
+      @include desktop {
+        margin-top: $space;
+        margin-right: 4 * $space;
+        order: 2;
+      }
+
+      &::after {
+        content: "\2191";
+        margin-left: 8px;
+      }
+    }
+  }
+
+  p {
+
+    height: 88px;
+    font-family: $font-1;
+    font-weight: $font-light;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -1px;
+
+    @include desktop {
+      margin-bottom: 50px;
+      width: 80%;
+    }
+
+    strong {
+      font-weight: $font-regular;
+    }
+  }
+
+  form {
+    width: 100%;
+    margin-top: 7 * $space;
+    padding-bottom: $space;
+
+
+    @include tablet {
+      margin-top: 2 * $space;
+    }
+
+    @include desktop {
+      margin-top: 2 * $space;
+    }
+
+    // fieldset {
+    //   width: 100%;
+    //   display: flex;
+    //   flex-wrap: wrap;
+
+
+    // }
+
+    label {
+      font-family: $font-1;
+      font-size: 2.14 * $base-unit;
+      line-height: 42px;
+
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid $black;
+      width: 98%;
+
+      @include desktop {
+        width: 20%;
+        text-align: center;
+      }
+
+      &::placeholder {
+        font-family: $font-1;
+        font-size: $base-unit;
+        text-align: center;
+        color: $formgrey;
+        text-align: left;
+
+
+      }
+    }
+
+    input[type="checkbox"] {
+      margin-top: 2*$space;
+      margin-left: -0.5 * $space;
+      width: 3 * $base-unit;
+
+      &+label {
+        font-weight: $font-light;
+        font-size: 1.29 * $base-unit;
+        line-height: 2 * $base-unit;
+
+      }
+    }
+
+    button {
+
+
+      width: 166px;
+      height: 42px;
+
+
+      // margin-top: 2 *$space;
+      // margin-left: 2 * $space;
+      // margin-bottom: 3*$space;
+
+      // @include tablet {
+      //   margin-left: 8 * $space;
+      // }
+
+      // @include desktop {
+      //   margin-top: 0;
+      //   margin-left: 20 * $space;
+      // }
+
+      &::after {
+        content: "\2192";
+        margin-left: 8px;
+
+      }
+    }
+  }
+
+  .validity {
+    display: none;
+    color: red;
+  }
+
+  form {
+    &.is-submitted {
+
+      input:invalid {
+        &+.validity {
+          display: block;
+        }
+      }
+    }
+  }
+}

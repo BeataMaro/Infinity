@@ -1,0 +1,105 @@
+#contact {
+    width: 100%;
+    background-color: $lightgrey;
+    position: relative;
+    height: 600px;
+
+    @include tablet {
+        height: 500px;
+    }
+
+    @include desktop {
+        height: 650px;
+    }
+
+
+    .compass {
+        position: absolute;
+        top: 5*$space;
+        left: 6*$space;
+        z-index: 20;
+
+        @include tablet {
+
+            top: 5*$space;
+            left: 13.5*$space;
+        }
+
+        @include desktop {
+
+            top: 10*$space;
+            left: 3*$space;
+        }
+
+    }
+
+    .map {
+
+        background-image: none;
+        height: 100vh;
+
+        @include desktop {
+
+            height: 650px;
+            background-image: url(../img/crop-map.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .address {
+            position: absolute;
+            top: 7*$space;
+            left: 2*$space;
+            font-size: 22px;
+            font-family: $font-1;
+            color: $grey;
+            height: 229px;
+            width: 276px;
+            text-align: center;
+
+            @include tablet {
+
+                top: 8*$space;
+                left: 9*$space;
+            }
+
+
+            @include desktop {
+                text-align: left;
+                top: 10*$space;
+                left: 3.5*$space;
+            }
+
+
+
+            strong {
+                font-weight: $font-regular;
+                letter-spacing: -1px;
+                line-height: 29px;
+            }
+
+            p,
+            span {
+                font-weight: $font-light;
+                font-size: 20px;
+            }
+
+        }
+
+        .pin {
+
+            display: none;
+
+            @include desktop {
+                display: inherit;
+                position: absolute;
+                top: 7*$space;
+                right: 11*$space;
+                z-index: 30;
+
+
+            }
+        }
+    }
+}

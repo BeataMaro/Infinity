@@ -1,0 +1,140 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4 * $space;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  &-logo {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: $space;
+    height: 75px;
+    border-top: 9px solid $green;
+    padding-top: 10px;
+
+    img {
+      width: 90px;
+    }
+
+    @include desktop {
+      left: 0.5 * $space;
+    }
+  }
+
+  &-nav {
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    width: 80%;
+    height: 3 * $space;
+
+    @include max-media($bp-desktop) {
+      body.open & {
+        visibility: visible;
+        justify-content: center;
+        background-color: $darkgrey;
+        height: 50vh;
+        width: 50%;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    @include desktop {
+      visibility: visible;
+      flex-direction: row;
+      justify-content: flex-end;
+      z-index: 20;
+      color: $white;
+      font-family: $font-1;
+      font-size: $font-small;
+      font-weight: $font-light;
+      line-height: 2em;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    body.open & {
+      li {
+        margin-top: 2em;
+        margin-left: $space;
+      }
+
+      li,
+      a {
+        visibility: visible;
+        display: block;
+        width: 100%;
+        color: $white;
+        font-family: $font-1;
+        transition: 250ms ease-in;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      a {
+        padding: 0.5 $space;
+      }
+    }
+
+    @include desktop {
+      padding-top: 0.5 * $space;
+
+      li,
+      a {
+        display: inline-block;
+      }
+
+      li {
+        border-right: thin solid $white;
+
+        &:nth-child(4) {
+          border-right: none;
+        }
+      }
+
+      a {
+        padding: 0.5 * $space 2 * $space;
+        background: orangered;
+
+        &:hover {
+          box-shadow: 0 -9px 0 0 $green;
+        }
+      }
+    }
+  }
+
+  //hamburger menu
+
+  &-menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5 * $space;
+    right: $space;
+    width: 35px;
+    z-index: 150;
+
+    span {
+      background-color: $white;
+      display: block;
+      height: 10px;
+      margin: 6px;
+      border-radius: 50%;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+}

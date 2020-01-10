@@ -1,0 +1,67 @@
+.cookies {
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.83);
+    position: fixed;
+    bottom: 0;
+    height: 150px;
+    padding-top: 10px;
+    z-index: 100;
+
+    @include desktop {
+        padding-top: 27px;
+        height: 103px;
+    }
+
+    &-content {
+        img {
+            width: 39px;
+            height: 47px;
+            transform: rotate(-20deg);
+            float: left;
+            margin-bottom: 1em;
+
+            @include desktop {
+                margin: 0;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-family: $font-1;
+            font-weight: $font-light;
+            font-size: $font-small;
+            color: $lightgrey;
+            float: left;
+
+            margin-left: 2%;
+
+            @include desktop {
+
+                width: 80%;
+                font-size: $base-unit;
+                line-height: 19px;
+            }
+        }
+
+        a {
+            color: $green;
+            text-decoration: underline;
+        }
+
+        button {
+            width: 81px;
+            height: 23px;
+            font-size: $font-small;
+            margin-left: $space;
+
+            @include tablet {
+
+                margin-left: 1.5*$base-unit;
+            }
+
+            @include desktop {
+                margin-left: 2*$space;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+#products {
+
+    position: relative;
+
+    .products {
+        width: 100%;
+        background-color: $white;
+        height: 850px;
+
+
+        @include tablet {
+
+            height: 600px;
+        }
+
+        @include desktop {
+
+            height: 928px;
+        }
+
+        .h2 {
+            margin: 40px auto 20px;
+            text-align: center;
+
+        }
+
+        .h3 {
+
+            font-weight: $font-light;
+            margin: $base-unit auto;
+            text-align: center;
+
+
+        }
+
+        &__container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            // padding-left: 2*$space;
+
+
+
+
+            @include desktop {
+
+                justify-content: space-between;
+                // margin: 3*$space auto;
+                width: 80%;
+
+
+
+            }
+
+            .mobile {
+
+                display: none;
+
+
+                @include desktop {
+
+                    display: initial;
+                }
+            }
+
+            .tablet {
+
+                display: none;
+
+                @include tablet {
+
+                    display: initial;
+                }
+            }
+
+            .product {
+
+
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+                position: relative;
+                width: 196px;
+                height: 390px;
+                transition: 0.1s;
+                margin-bottom: -7*$space;
+
+                @include desktop {
+                    margin-bottom: -5*$space;
+                }
+
+                &-info {
+                    visibility: hidden;
+                }
+
+                &-icon {
+                    position: absolute;
+                    top: 52px;
+                    right: 28.5px;
+                    height: 139px;
+                    width: 139px;
+
+
+                }
+
+                &:hover {
+                    color: $white;
+                    background-color: $green;
+                    z-index: 200;
+
+                    .product-icon {
+                        filter: invert(100%);
+
+                    }
+
+                    .product-info {
+                        visibility: visible;
+                        width: 159px;
+                        color: $white;
+                        font-family: $font-1;
+                        font-size: $base-unit;
+                        font-weight: $font-regular;
+                        line-height: 18px;
+                        margin-left: 18px;
+                        margin-top: 110%;
+
+                    }
+                }
+            }
+        }
+    }
+}

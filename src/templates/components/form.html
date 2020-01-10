@@ -1,0 +1,37 @@
+    <section id="form">
+        <aside class="pages">5/5</aside>
+        <div class="wrapper">
+            <div class="formHeader">
+                <button class="btn">Let us know how to contact You</button>
+                <h2 class="h2">Contact</h2>
+            </div>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, <strong>totam rem
+                    aperiam</strong>, eaque ipsa quae ab illo <strong>inventore veritatis et</strong> quasi<br>
+                architecto
+                beatae vitae.</p>
+            <form name="userForm" id="userForm" action="#" method="GET">
+                <fieldset><label for="formName">Hello! I'm</label> <input type="text" name="userName" id="formName"
+                        placeholder="Your name" minlength="3"><label for="formCompany"> and I represent
+                    </label><input type="text" name="companyName" id="formCompany" placeholder="Company name">.
+                </fieldset>
+                <fieldset><label for="formTel">Call me at</label><input type="tel" name="userTel" id="formTel"
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="Your telephone number"><label for="formMail">or
+                        send an email to</label><input type="email" name="userMail"
+                        pattern="^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$" id="formMail"
+                        placeholder="Your email adress">.
+                </fieldset>
+
+                <fieldset><input type="checkbox" name="checkbox" id="formCheckbox"><label for="formCheckbox">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </label> </fieldset>
+                <p class="validity" id="error">Please, correct errors.</p>
+                <p class="info" id="msg">Thank you for getting in touch!</p>
+                <button class="btn" type="submit">Send details</button>
+
+
+            </form>
+        </div>
+
+    </section>
+    </main>

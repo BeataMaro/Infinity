@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    padding: 0 $space;
+    max-width: $container-max-width;
+    position: relative;
+
+    @media screen and (min-width: $bp-desktop) {
+        margin: 0 auto;
+    }
+}
+
+.component {
+    margin: $space 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 2*$space;
+        margin-top: 2*$space;
+    }
+}
+
+button {
+
+    background-color: transparent;
+    border: none;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.pages {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: block;
+        padding: 21px;
+        border-bottom: thin solid $darkgrey2;
+        color: $darkgrey2;
+        font-family: $font-2;
+        font-weight: $font-regular;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    font-family: $font-2;
+    // font-weight: $font-light;
+    margin-bottom: $space;
+}
+
+h1,
+.h1 {
+    font-size: $font-size-h1;
+    text-align: center;
+}
+
+h2,
+.h2 {
+    font-size: $font-size-h2;
+}
+
+h3,
+.h3 {
+    font-size: $font-form;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.btn {
+    min-height: 23px;
+    max-height: 42px;
+    font-family: $font-1;
+    font-size: $base-unit;
+    font-weight: $font-regular;
+    text-align: center;
+    background-color: $green;
+    border-radius: 3px;
+    border: 0;
+    color: $white;
+    transition: 0.7s;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: $darkgrey;
+        color: $verylightgrey;
+    }
+}
+
+
+img {
+    max-width: 100%;
+    color: transparent;
+    font-size: inherit;
+}
+
+
+
+.info {
+    font-family: $font-1;
+    font-weight: $font-regular;
+    color: $green;
+}
