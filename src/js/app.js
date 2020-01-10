@@ -21,15 +21,15 @@ const navLi = document.querySelectorAll('.header-nav_li');
 
 navButton.onclick = function () {
 
-    let navBg = document.getElementById('header-nav_bg');
-    let navVisible = document.getElementById('header-nav_visible');
-    let navlist = document.getElementById('header-nav');
+    // let navBg = document.getElementById('header-nav_bg');
+    // let navVisible = document.getElementById('header-nav_visible');
+    // let navlist = document.getElementById('header-nav');
 
 
-    navBg.classList.toggle('hidden')
-    navlist.classList.toggle('hidden')
+    // navBg.classList.toggle('hidden')
+    // navlist.classList.toggle('hidden')
 
-    navVisible.setAttribute('hidden', true);
+    // navVisible.setAttribute('hidden', true);
 
     console.log('Menu')
 
