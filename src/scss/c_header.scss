@@ -5,35 +5,29 @@
   background-color: $green;
   display: grid;
   place-items: center;
-  background-image: linear-gradient(
-      to bottom right,
+  background-image: linear-gradient(to bottom right,
       rgba(16, 24, 30, 0.9) 0%,
       rgba(52, 162, 21, 0.9) 50%,
-      rgba(215, 174, 19, 0.9) 100%
-    ),
+      rgba(215, 174, 19, 0.9) 100%),
     url(../img/chips-computer_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center center;
 
   @include tablet {
     height: 600px;
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(16, 24, 30, 0.9) 0%,
         rgba(52, 162, 21, 0.9) 50%,
-        rgba(215, 174, 19, 0.9) 100%
-      ),
+        rgba(215, 174, 19, 0.9) 100%),
       url(../img/chips-computer_tablet.jpg);
   }
 
   @include desktop {
     height: 100vh;
-    background-image: linear-gradient(
-        to bottom right,
+    background-image: linear-gradient(to bottom right,
         rgba(16, 24, 30, 0.9) 0%,
         rgba(52, 162, 21, 0.9) 50%,
-        rgba(215, 174, 19, 0.9) 100%
-      ),
+        rgba(215, 174, 19, 0.9) 100%),
       url(../img/chips-computer_desktop.jpg);
   }
 
@@ -44,13 +38,12 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 1px,
-      rgba(0, 0, 0, 0.2) 2px,
-      rgba(0, 0, 0, 0.1) 3px
-    );
+    background: repeating-linear-gradient(-45deg,
+        transparent,
+        transparent 1px,
+        rgba(0, 0, 0, 0.2) 2px,
+        rgba(0, 0, 0, 0.1) 3px);
+
   }
 
   @media (min-width: 1024px) and (orientation: landscape) {
@@ -60,28 +53,28 @@
   }
 
   &-cont {
-    width: 50%;
-    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
 
-    span {
-      color: white;
-      display: block;
+    h1 {
+
+      font-size: $font-size-h2;
+
+      span {
+        color: white;
+        display: block;
+      }
+
+      @include desktop {
+        font-size: $font-size-h1;
+      }
     }
 
     .wrapper {
       z-index: 2;
       height: 100%;
-    }
-
-    @include tablet {
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%);
-    }
-
-    @include desktop {
-      top: 50%;
-      left: 45%;
     }
   }
 }

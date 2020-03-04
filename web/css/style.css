@@ -383,24 +383,25 @@ img {
       background-size: cover;
       min-height: 504px; } }
   .hero-cont {
-    width: 50%;
-    margin-left: auto; }
-    .hero-cont span {
-      color: white;
-      display: block; }
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10; }
+    .hero-cont h1 {
+      font-size: 3.6rem; }
+      .hero-cont h1 span {
+        color: white;
+        display: block; }
+      @media screen and (min-width: 1200px) {
+        .hero-cont h1 {
+          font-size: 4.14rem; } }
     .hero-cont .wrapper {
       z-index: 2;
       height: 100%; }
-    @media screen and (min-width: 768px) {
-      .hero-cont {
-        top: 40%;
-        left: 50%;
-        -webkit-transform: translate(-50%);
-                transform: translate(-50%); } }
-    @media screen and (min-width: 1200px) {
-      .hero-cont {
-        top: 50%;
-        left: 45%; } }
 
 .cookies {
   width: 100%;
